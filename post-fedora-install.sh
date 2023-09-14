@@ -10,7 +10,7 @@ sudo reboot
 
 
 
-## Istalling and Configuring git settings
+## Install and Configure git settings
 
 # Installing git
 echo "Installing git..."
@@ -24,7 +24,7 @@ git config --global init.defaultBranch main
 
 
 
-## Installing nvidia drivers
+## Install nvidia drivers
 
 # Checking if NVIDIA GPU is installed in computer
 echo "Checking if NVIDIA GPU is installed in computer..."
@@ -49,20 +49,25 @@ echo "Installing the NVIDIA Drivers on Fedora Workstation 38 from RPM Fusion Rep
 echo "Press Y and then Enter every time..."
 sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
 
-# Reboot system 
+# Rebooting system 
 echo "Rebooting system..."
 sudo reboot
 
-# Checking Whether the NVIDIA Drivers Are Working on Fedora
+# Checking whether the NVIDIA Drivers Are Working on Fedora
 echo "Checking Whether the NVIDIA Drivers Are Working on Fedora..."
 lsmod | grep nvidia
 nvidia-smi
 
 
-## Installing brave browser
+## Install Brave Browser
 echo "Installing brave browser..."
 sudo dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser brave-keyring
+
+
+# Install Gnome Tweaks
+echo "Installing gnome tweaks..."
+sudo dnf install gnome-tweaks
 # End of the script
