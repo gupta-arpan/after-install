@@ -20,6 +20,7 @@ sudo dnf -y install git
 echo "Configuring git settings..."
 git config --global user.email "arpan6095@gmail.com"
 git config --global user.name "gupta-arpan"
+git config --global init.defaultBranch main
 
 
 
