@@ -80,4 +80,16 @@ sudo dnf install zsh
 echo "Setting zsh as default terminal..."
 chsh -s $(which zsh)
 
+# Set themes and plugins for zsh
+echo "Installing and setting up plugins and themes..."
+echo "Syntax highlighting"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh/zsh-syntax-highlighting
+echo "source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+echo "Powerlevel10k theme"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.config/zsh/powerlevel10k
+echo 'source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+echo "Auto suggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/zsh-autosuggestions
+echo 'source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >>~/.zshrc
+
 # End of the script
