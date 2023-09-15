@@ -91,5 +91,11 @@ echo 'source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 echo "Auto suggestions"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/zsh-autosuggestions
 echo 'source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >>~/.zshrc
+echo "History substring"
+git clone https://github.com/zsh-users/zsh-history-substring-search ~/.config/zsh/zsh-history-substring-search
+echo 'source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh' >>~/.zshrc
+echo "Auto notify"
+git clone https://github.com/MichaelAquilina/zsh-auto-notify.git ~/.config/zsh/auto-notify
+echo 'source ~/.config/zsh/auto-notify/auto-notify.plugin.zsh' >>~/.zshrc
 
 # End of the script
