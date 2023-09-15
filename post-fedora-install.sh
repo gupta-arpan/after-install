@@ -70,4 +70,14 @@ sudo dnf install brave-browser brave-keyring
 # Install Gnome Tweaks
 echo "Installing gnome tweaks..."
 sudo dnf install gnome-tweaks
+
+
+# Install zsh
+echo "Installing zsh..."
+sudo dnf install zsh
+
+# Set zsh as default terminal
+echo "Setting zsh as default terminal..."
+chsh -s $(which zsh)
+
 # End of the script
